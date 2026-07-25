@@ -1,33 +1,62 @@
 # Vertex Studio
 
-A shared repository for our team's web development projects.
-Built by 4 classmates learning HTML, CSS, and JavaScript together.
+A team portfolio and project tracker built by 4 classmates learning web development together.
+The site introduces the team, showcases each member's work, and documents all projects.
 
 ---
 
 ## Repository Structure
 
-Each project lives in its own folder at the root of the repository.
-All projects follow the same internal folder structure:
+```
+vertex-studio/
+├── index.html              # Team home page
+├── members.html            # All members overview
+├── projects.html           # All projects overview
+├── contact.html            # Contact page
+│
+├── css/
+│   └── global.css          # Shared styles (navbar, footer, typography, etc.)
+│
+├── js/                     # Shared JavaScript (when needed)
+│
+├── images/                 # Shared team site assets (logo, backgrounds, etc.)
+│
+├── members/                # Individual member profile pages
+│   ├── zaid/
+│   │   └── index.html      # Zaid's profile + his projects listed
+│   ├── younus/
+│   │   └── index.html
+│   ├── omar/
+│   │   └── index.html
+│   └── nasim/
+│       └── index.html
+│
+└── projects/               # All class/team projects
+    └── project-javapoint/
+        ├── index.html
+        ├── css/
+        └── images/
+```
 
+---
+
+## Structure Rules
+
+**Team website pages** (`index.html`, `members.html`, etc.) live at the **repo root**.
+
+**Each project** in `projects/` follows this internal layout:
 ```
 project-name/
-├── index.html          # Home/main page
-├── page2.html          # Additional pages (at the root of the project)
+├── index.html      # Project entry point (always at project root)
+├── page2.html      # Additional pages also at project root
 ├── css/
-│   ├── global.css      # Styles shared across all pages
-│   └── page2.css       # Styles specific to a single page
+│   ├── global.css  # Styles shared across all pages in this project
+│   └── page2.css   # Page-specific styles
 ├── js/
-│   └── main.js         # JavaScript files (when needed)
 └── images/
-    └── ...             # All image assets
 ```
 
-**Rules:**
-- HTML files go at the **root** of the project folder (not inside a subfolder)
-- CSS files go inside `css/`
-- JavaScript files go inside `js/`
-- Images and other assets go inside `images/`
+**Member pages** in `members/` link back to the root using `../../` paths and can link to any project via `../../projects/project-name/index.html`.
 
 ---
 
@@ -35,7 +64,7 @@ project-name/
 
 | Project | Description | Folder |
 |---------|-------------|--------|
-| JavaTPoint Clone | A clone of the JavaTPoint tutorial website | [project-javapoint](./project-javapoint/) |
+| JavaTPoint Clone | A clone of the JavaTPoint tutorial website | [projects/project-javapoint](./projects/project-javapoint/) |
 
 ---
 
@@ -43,7 +72,6 @@ project-name/
 
 | Name | GitHub |
 |------|--------|
-
 | Mohammad Younus | https://github.com/MohammadYounusM |
 | Omar Qaljaei | https://github.com/Omar-sul-khil |
 | Nasim Sohail | — |
