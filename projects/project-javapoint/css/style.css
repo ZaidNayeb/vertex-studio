@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+.back-bar {
+  background: #050816;
+  padding: 9px 20px;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.back-bar a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Inter", Arial, sans-serif;
+  transition: color 0.2s ease;
+}
+
+.back-bar a:hover {
+  color: #38bdf8;
+}
+
 body {
   /* height: 100vh; */
 }
