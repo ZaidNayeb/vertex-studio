@@ -10,6 +10,27 @@ body {
   font-family: "Inter", Arial, sans-serif;
 }
 
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 18px;
+  margin: 28px 0 0 5%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
 .header {
   text-align: center;
   padding: 80px 20px 60px;
@@ -44,11 +65,9 @@ body {
 }
 
 .card {
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.07),
-    rgba(255, 255, 255, 0.03)
-  );
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.03));
   border: 1px solid rgba(56, 189, 248, 0.15);
   border-radius: 20px;
   padding: 36px 30px;
