@@ -93,7 +93,7 @@ nav li:hover {
 
 .btn span {
   transition: 0.3s;
-  color: purple;
+  color: #2563eb;
   /* font-size: 130%; */
 }
 
@@ -134,7 +134,7 @@ main {
   border-radius: 10px;
 
   color: #f5f7fa;
-  background-color: rgb(121, 4, 255);
+  background-color: #2563eb;
   transition: all 0.3s ease;
 }
 

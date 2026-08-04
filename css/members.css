@@ -88,7 +88,7 @@ nav li:hover {
 
 .btn span {
   transition: 0.3s;
-  color: purple;
+  color: #2563eb;
 }
 
 .header {
@@ -100,7 +100,7 @@ nav li:hover {
   font-size: 46px;
   font-weight: 700;
   letter-spacing: -0.5px;
-  background: linear-gradient(90deg, #7904ff, #a855f7);
+  background: linear-gradient(90deg, #1d4ed8, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -130,7 +130,7 @@ nav li:hover {
     rgba(255, 255, 255, 0.07),
     rgba(255, 255, 255, 0.03)
   );
-  border: 1px solid rgba(121, 4, 255, 0.15);
+  border: 1px solid rgba(37, 99, 235, 0.15);
   border-radius: 20px;
   padding: 36px 30px;
   text-align: center;
@@ -145,8 +145,8 @@ nav li:hover {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(121, 4, 255, 0.18);
-  border-color: rgba(121, 4, 255, 0.4);
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.18);
+  border-color: rgba(37, 99, 235, 0.4);
 }
 
 .card img {
@@ -154,8 +154,8 @@ nav li:hover {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #7904ff;
-  box-shadow: 0 0 22px rgba(121, 4, 255, 0.4);
+  border: 3px solid #2563eb;
+  box-shadow: 0 0 22px rgba(37, 99, 235, 0.4);
 }
 
 .card h2 {
@@ -166,7 +166,7 @@ nav li:hover {
 }
 
 .card h3 {
-  color: #a855f7;
+  color: #60a5fa;
   margin: 6px 0 14px;
   font-size: 13px;
   font-weight: 500;
@@ -190,9 +190,9 @@ nav li:hover {
 }
 
 .skills span {
-  background: rgba(121, 4, 255, 0.1);
-  border: 1px solid rgba(121, 4, 255, 0.25);
-  color: #a855f7;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  color: #60a5fa;
   padding: 5px 14px;
   border-radius: 20px;
   font-size: 13px;
@@ -204,19 +204,19 @@ nav li:hover {
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 20px;
-  background: rgba(121, 4, 255, 0.07);
-  border: 1px solid rgba(121, 4, 255, 0.15);
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(37, 99, 235, 0.15);
   padding: 6px 18px;
   border-radius: 20px;
 }
 
 .project-count span {
-  color: #a855f7;
+  color: #60a5fa;
   font-weight: 700;
 }
 
 button {
-  background: #7904ff;
+  background: #2563eb;
   color: #f5f7fa;
   border: none;
   padding: 11px 28px;
@@ -232,7 +232,7 @@ button {
 }
 
 button:hover {
-  background: #a855f7;
+  background: #3b82f6;
   transform: scale(1.04);
 }
 
