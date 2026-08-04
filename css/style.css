@@ -11,19 +11,24 @@ body {
   background-color: #060910;
 }
 
+header,
+header * {
+  font-family: "Inter", Arial, sans-serif;
+}
+
 header {
-  height: 12%;
+  position: relative;
+  height: 12vh;
   border-bottom: 1px solid #232833;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4vh;
+  background-color: #060910;
 }
 
 .logo {
   width: fit-content;
-  height: 100%;
-  /* padding-left: 3vh; */
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: -0.04em;
@@ -35,12 +40,13 @@ header {
 }
 
 nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 35%;
   height: 100%;
-  /* padding: 0 10%; */
   display: flex;
   justify-content: center;
-  margin-right: 100px;
 }
 
 nav ul {
@@ -114,7 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5%;
+  gap: 1.5rem;
   margin: 0 5%;
 }
 
