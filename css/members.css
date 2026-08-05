@@ -5,30 +5,9 @@
 }
 
 body {
-  background: #050816;
+  background: #060910;
   color: white;
   font-family: "Inter", Arial, sans-serif;
-}
-
-
-.back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #94a3b8;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 9px 18px;
-  margin: 28px 0 0 5%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.back-btn:hover {
-  color: #38bdf8;
-  border-color: rgba(56, 189, 248, 0.35);
 }
 
 .header {
@@ -40,7 +19,7 @@ body {
   font-size: 46px;
   font-weight: 700;
   letter-spacing: -0.5px;
-  background: linear-gradient(90deg, #38bdf8, #7dd3fc);
+  background: linear-gradient(90deg, #1d4ed8, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,9 +44,11 @@ body {
 }
 
 .card {
-  background: linear-gradient(145deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.03));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.03)
+  );
   border: 1px solid rgba(56, 189, 248, 0.15);
   border-radius: 20px;
   padding: 36px 30px;
@@ -83,8 +64,8 @@ body {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.18);
-  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.18);
+  border-color: rgba(37, 99, 235, 0.4);
 }
 
 .card img {
@@ -92,8 +73,8 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #38bdf8;
-  box-shadow: 0 0 22px rgba(56, 189, 248, 0.4);
+  border: 3px solid #2563eb;
+  box-shadow: 0 0 22px rgba(37, 99, 235, 0.4);
 }
 
 .card h2 {
@@ -104,7 +85,7 @@ body {
 }
 
 .card h3 {
-  color: #38bdf8;
+  color: #60a5fa;
   margin: 6px 0 14px;
   font-size: 13px;
   font-weight: 500;
@@ -128,9 +109,9 @@ body {
 }
 
 .skills span {
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  color: #7dd3fc;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  color: #60a5fa;
   padding: 5px 14px;
   border-radius: 20px;
   font-size: 13px;
@@ -142,20 +123,20 @@ body {
   font-size: 13px;
   font-weight: 500;
   margin-bottom: 20px;
-  background: rgba(56, 189, 248, 0.07);
-  border: 1px solid rgba(56, 189, 248, 0.15);
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(37, 99, 235, 0.15);
   padding: 6px 18px;
   border-radius: 20px;
 }
 
 .project-count span {
-  color: #38bdf8;
+  color: #60a5fa;
   font-weight: 700;
 }
 
 button {
-  background: #38bdf8;
-  color: #00111c;
+  background: #2563eb;
+  color: #f5f7fa;
   border: none;
   padding: 11px 28px;
   border-radius: 25px;
@@ -170,7 +151,7 @@ button {
 }
 
 button:hover {
-  background: #7dd3fc;
+  background: #3b82f6;
   transform: scale(1.04);
 }
 
