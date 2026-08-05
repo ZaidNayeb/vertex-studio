@@ -10,8 +10,9 @@ body {
   font-family: "Inter", Arial, sans-serif;
 }
 
-/* ── Site Navbar ── */
-header {
+
+
+.header_navbar {
   position: relative;
   height: 12vh;
   border-bottom: 1px solid #232833;
@@ -122,15 +123,14 @@ nav li:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+  margin-top: 20px;
 }
 
 .card {
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.07),
-    rgba(255, 255, 255, 0.03)
-  );
-  border: 1px solid rgba(37, 99, 235, 0.15);
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(56, 189, 248, 0.15);
   border-radius: 20px;
   padding: 36px 30px;
   text-align: center;
