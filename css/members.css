@@ -10,6 +10,88 @@ body {
   font-family: "Inter", Arial, sans-serif;
 }
 
+
+
+.header_navbar {
+  position: relative;
+  height: 12vh;
+  border-bottom: 1px solid #232833;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vh;
+  background-color: #060910;
+}
+
+.logo {
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  color: #f5f7fa;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f7fa;
+}
+
+nav li {
+  transition: all 0.3s ease;
+}
+
+nav li:hover {
+  transform: scale(1.02) translateY(-3px);
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1% 2%;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f5f7fa;
+  border: 1px solid #232833;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translate(0, -5px);
+  background-color: #f5f7fa;
+  color: #0d1117;
+}
+
+.btn span {
+  transition: 0.3s;
+  color: #2563eb;
+}
+
 .header {
   text-align: center;
   padding: 80px 20px 60px;
@@ -41,14 +123,13 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+  margin-top: 20px;
 }
 
 .card {
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.07),
-    rgba(255, 255, 255, 0.03)
-  );
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.03));
   border: 1px solid rgba(56, 189, 248, 0.15);
   border-radius: 20px;
   padding: 36px 30px;
