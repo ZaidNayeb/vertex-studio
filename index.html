@@ -3,93 +3,299 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <title>website</title>
   </head>
-  <body>
+  <body class="bg-[#05070D]">
     <!-- Header of the page -->
+
     <header>
-      <a href="#" class="logo">
-        <h1>Vertex.</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./projects.html">Projects</a></li>
-          <li><a href="./members.html">Members</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="btn">
-        Contact
-        <span>↗</span>
-      </a>
+      <section
+        class="w-full px-8 py-2 flex flex-col gap-8 justify-between items-center border-b-2 border-b-[#8B5CF6] md:flex-row"
+      >
+        <article>
+          <a
+            href="index.html"
+            class="flex flex-col gap-1.5 items-center md:flex-row header-animation"
+          >
+            <img
+              src="../images/icon/Vertex.logo.light.png"
+              alt="Team Logo"
+              class="w-36 h-15 rounded-bl-full rounded-tr-full"
+            />
+            <div>
+              <p class="text-2xl text-[#7C3AED]">Vertex</p>
+              <p class="text-white">Core Codes</p>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <ul class="flex gap-10 items-center justify-center flex-wrap">
+            <li
+              class="bg-white rounded-bl-full rounded-tr-full header-animation"
+            >
+              <a class="p-1.5 text-black font-bold" href="./index.html">
+                Home</a
+              >
+            </li>
+
+            <li class="transition-all duration-700 hover:scale-125">
+              <a class="p-1.5 text-white font-bold" href="#our-team">
+                Members</a
+              >
+            </li>
+
+            <li class="transition-all duration-700 hover:scale-125">
+              <a class="p-1.5 text-white font-bold" href="#our-services">
+                Services</a
+              >
+            </li>
+
+            <li
+              class="bg-white rounded-tl-full rounded-br-full header-animation"
+            >
+              <a class="p-1.5 text-black font-bold" href="#contact-us">
+                About</a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <a href="">
+            <img
+              class="w-36 h-15 rounded-tl-full rounded-br-full header-animation"
+              src="../images/icon/Vertex.logo.light.png"
+              alt="Team Logo"
+          /></a>
+        </article>
+      </section>
     </header>
 
-    <!-- Hero Section -->
+    <!-- main section  -->
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <p>We're Vertex Studio</p>
-          <h1>Building the web, Beautifully</h1>
-          <h4>
+      <section class="flex flex-col gap-8 px-14 py-16 md:flex-row">
+        <article>
+          <p class="mb-8 text-2xl text-[#7C3AED]">We're Vertex Studio</p>
+          <h1 class="mb-8 text-6xl font-bold text-white">
+            Building the web, Beautifully
+          </h1>
+          <h4 class="mb-5 text-white opacity-50">
             A group of passionate developers crafting <br />
             fast, modern and user-friendly websites
           </h4>
-          <button>
-            <a href="#">
-              View Our Work
-              <span>↗</span>
-            </a>
+          <button
+            type="button"
+            class="bg-[#7C3AED] hover:bg-[#A855F7] text-white font-bold py-2 px-4 mt-15 rounded"
+          >
+            <a href=""> View Our Work </a>
           </button>
-        </div>
+        </article>
+        <article class="w-full h-100">
+          <img
+            src="../images/Main-Page/main-pic.png"
+            alt=""
+            class="w-100% h-full rounded-3xl shadow shadow-white"
+          />
+        </article>
+      </section>
 
-        <div class="hero-illustration">
-          <img src="./images/Main-Page/main-page_dark-mode.png" alt="" />
-        </div>
+      <!-- بخش معرفی اعضای تیم -->
+      <section
+        class="px-14 py-5 mt-20 flex flex-col items-center"
+        id="our-team"
+      >
+        <h3
+          class="bg-[#7C3AED] text-2xl text-white w-75 p-5 rounded-2xl text-center mb-18 header-animation"
+        >
+          Meet Our Team
+        </h3>
+        <article
+          class="flex flex-col gap-14 items-center justify-center md:flex-row md:flex-wrap md:gap-5"
+        >
+          <article
+            class="w-58 h-85 text-center flex flex-col items-center rounded-2xl shadow-2xl shadow-[#8B5CF6] overflow-hidden"
+          >
+            <img
+              class="img-card"
+              src="../images/our-team/younus.png"
+              alt=""
+            />
+            <p class="text-[1.25rem] text-white mt-8">MohammadYonis</p>
+            <p
+              class="text-white text-[1.25rem] mt-5 border-t-2 border-[#8B5CF6] pt-1"
+            >
+              Front-End Developer
+            </p>
+          </article>
+          <article
+            class="w-58 h-85 text-center flex flex-col items-center rounded-2xl shadow-2xl shadow-[#8B5CF6] overflow-hidden"
+          >
+            <img
+              class="img-card"
+              src="../images/our-team/omar.png"
+              alt=""
+            />
+            <p class="text-[1.25rem] text-white mt-8">Omar</p>
+            <p
+              class="text-white text-[1.25rem] mt-5 border-t-2 border-[#8B5CF6] pt-1"
+            >
+              Designer /UI-UX
+            </p>
+          </article>
+          <article
+            class="w-58 h-85 text-center flex flex-col items-center rounded-2xl shadow-2xl shadow-[#8B5CF6] overflow-hidden"
+          >
+            <img
+              class="img-card"
+              src="../images/our-team/zaid.jpg"
+              alt=""
+            />
+            <p class="text-[1.25rem] text-white mt-8">Zaid</p>
+            <p
+              class="text-white text-[1.25rem] mt-5 border-t-2 border-[#8B5CF6] pt-1"
+            >
+              Database Developer
+            </p>
+          </article>
+          <article
+            class="w-58 h-85 text-center flex flex-col items-center rounded-2xl shadow-2xl shadow-[#8B5CF6] overflow-hidden"
+          >
+            <img
+              class="img-card"
+              src="../images/our-team/nasim.jpg"
+              alt=""
+            />
+            <p class="text-[1.25rem] text-white mt-8">MohammadNasim</p>
+            <p
+              class="text-white text-[1.25rem] mt-5 border-t-2 border-[#8B5CF6] pt-1"
+            >
+              Back-End Developer
+            </p>
+          </article>
+        </article>
+      </section>
+
+      <!-- بخش خدمات ارایه شده -->
+      <section
+        id="our-services"
+        class="px-14 py-5 mt-20 flex flex-col items-center"
+      >
+        <h3
+          class="bg-[#7C3AED] text-3xl text-white w-75 p-5 rounded-2xl text-center mb-22.5 header-animation"
+        >
+          Our Services
+        </h3>
+        <article
+          class="flex flex-col gap-14 items-center justify-center md:flex-row md:flex-wrap md:gap-8"
+        >
+          <article
+            class="w-60 h-90 rounded-4xl p-5 text-center shadow-2xl shadow-[#8B5CF6]"
+          >
+            <h3
+              class="text-3xl text-white mb-8 border-b-2 border-[#8B5CF6] pb-5"
+            >
+              Website Development
+            </h3>
+            <p class="text-lg text-white opacity-50">
+              Building the Best Modern Websites for Your Business
+            </p>
+          </article>
+
+          <article
+            class="w-60 h-90 rounded-4xl p-5 text-center shadow-2xl shadow-[#8B5CF6]"
+          >
+            <h3
+              class="text-3xl text-white mb-8 border-b-2 border-[#8B5CF6] pb-5"
+            >
+              Design & UI/UX Design
+            </h3>
+            <p class="text-lg text-white opacity-50">
+              Creating Promotional Cards and Logos for Your Business
+            </p>
+          </article>
+
+          <article
+            class="w-60 h-90 rounded-4xl p-5 text-center shadow-2xl shadow-[#8B5CF6]"
+          >
+            <h3
+              class="text-3xl text-white mb-8 border-b-2 border-[#8B5CF6] pb-5"
+            >
+              Database Development
+            </h3>
+            <p class="text-lg text-white opacity-50">
+              Building Accounting and Management Databases for Your Business
+            </p>
+          </article>
+
+          <article
+            class="w-60 h-90 rounded-4xl p-5 text-center shadow-2xl shadow-[#8B5CF6]"
+          >
+            <h3
+              class="text-3xl text-white mb-8 border-b-2 border-[#8B5CF6] pb-5"
+            >
+              App Development
+            </h3>
+            <p class="text-lg text-white opacity-50">
+              Building Desktop and Web Applications for Easy and Efficient
+              Management of Your Companies, Homes, and Daily Tasks
+            </p>
+          </article>
+        </article>
+      </section>
+
+      <!-- بخش تماس با ما -->
+
+      <section id="contact-us" class="py-12.5 px-7.5 mt-18 text-center">
+        <article class="border-2 border-[#8B5CF6] p-7.5 rounded-4xl">
+          <h1 class="text-white text-4xl mb-5">
+            Let’s start your next project together.
+          </h1>
+          <p class="text-white text-2xl mb-14 opacity-50">
+            Turn your ideas into reality with our creative and professional
+            solutions. Whether you need a modern website, custom application,
+            database, or digital design, our team is ready to help you build
+            something powerful, modern, and successful.
+          </p>
+          <button
+            class="bg-[#7C3AED] hover:bg-[#A855F7] text-white w-25 h-10 border rounded-3xl"
+          >
+            Contact Us
+          </button>
+        </article>
       </section>
     </main>
 
-    <!-- Footer( Companies ) -->
-    <footer>
-      <div class="companies">
-        <!-- <h4>Trusted by students, startups, and creative minds.</h4> -->
+    <footer class="border-t-2 border-[#252A3A]">
+      <article
+        class="flex flex-col justify-center items-center gap-30 py-20 px-12 md:flex-row"
+      >
+        <ul class="border-r-2 pr-10 border-white">
+          <li class="mb-5 text-white">Pages</li>
+          <li class="text-[#8B5CF6]"><a href="#"> Home</a></li>
+          <li class="text-[#8B5CF6]"><a href="#"> Members</a></li>
+          <li class="text-[#8B5CF6]"><a href="#"> Projects</a></li>
+          <li class="text-[#8B5CF6]"><a href="#"> About</a></li>
+        </ul>
+        <ul>
+          <li class="mb-5 text-[#7C3AED]">Members</li>
+          <li class="text-white">MohammadYonis</li>
+          <li class="text-white">Omar</li>
+          <li class="text-white">Zaid</li>
+          <li class="text-white">MohammadNasim</li>
+        </ul>
 
-        <a href="#">
-          <img
-            src="./images/Main-Page/GitHub Logo - White - zonalogo.com.png "
-            alt="logo of Github"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="./images/Main-Page/Vercel Logo - Light - zonalogo.com.svg"
-            alt="logo of Vercel"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="./images/Main-Page/Tailwind CSS Logo - White - zonalogo.com.svg "
-            alt="logo of Tailwind CSS"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="./images/Main-Page/React Logo - Light - zonalogo.com.svg"
-            alt="logo of react"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="./images/Main-Page/MongoDB Logo - White - zonalogo.com.svg"
-            alt="logo of react"
-          />
-        </a>
-      </div>
+        <ul class="border-l-2 pl-10 border-white">
+          <li class="mb-5 text-white">Contact Us</li>
+          <li class="text-[#8B5CF6]"><a href="#">Instagram</a></li>
+          <li class="text-[#8B5CF6]"><a href="#">Telegram</a></li>
+          <li class="text-[#8B5CF6]"><a href="#">Youtube</a></li>
+          <li class="text-[#8B5CF6]"><a href="#">GitHub</a></li>
+        </ul>
+      </article>
     </footer>
   </body>
 </html>

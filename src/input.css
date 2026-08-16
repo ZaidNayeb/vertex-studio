@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.img-card {
+ @apply w-full h-3/5 rounded-t-2xl transition-transform duration-700 hover:scale-105;
+}
+
+.header-animation {
+  animation: header-logo 2s ease-in-out infinite alternate;
+}
+@keyframes header-logo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
